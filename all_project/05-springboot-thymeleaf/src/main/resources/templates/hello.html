@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+    <h1 th:inline="text">这是个thymeleaf测试页面！</h1>
+    <!--th：text = ${xx} 意思是用取到的值来填充这标签中的内容-->
+    <p th:text="${map.province}" style="color: green"></p>
+    <p th:text="${map.city}" style="color: darkorange"></p>
+</body>
+</html>
